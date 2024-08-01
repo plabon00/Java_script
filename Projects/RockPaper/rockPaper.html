@@ -1,15 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Rock Paper scissor</title>
   <link rel="stylesheet" href="RPS.css">
-</head>
+
 <body>
-  
+
+  <h1 id="heading">ROCK🪨 PAPER📃 SCISSOR✂️</h1>
+
+  <h3 id="ins">SELECT__ONE</h3>
+  <button class="btn" onclick="rockBtn()">🪨</button>
+  <button class="btn" onclick="paperBtn()">📃</button>
+  <button class="btn" onclick="scissorBtn()">✂️</button>
+
+  <h3 id="winmsg"></h3>
+
+<script>
+  function rockBtn() {
+    let randomNum = Math.random()*3 ;
+    console.log(randomNum) ;
+    let compSelect ;
+    let icon ;
+      if(randomNum > 2){
+        compSelect = 'Scissor' ;
+        icon = '✂️' ;
+      }else if (randomNum >1 && randomNum <=2){
+        compSelect = 'Paper' ;
+        icon = '📃'
+      }else{
+        compSelect = 'Rock' ;
+        icon = '🪨'
+      }
+    let res ;
+      if (compSelect === 'Scissor') {
+          res = `You Win 🏆`
+      }else if (compSelect === 'Paper'){
+        res = `You Lose 😒`
+      }else{
+        res = `It's Tie 🥸`
+      }
+  alert(`You have Chose 🪨 , Computer Selected ${icon} , ${res}`) ;
+  }
+  function paperBtn() {
+    let randomNum = Math.random()*3 ;
+    console.log(randomNum) ;
+    let compSelect ;
+    let icon ;
+      if(randomNum > 2){
+        compSelect = 'Scissor' ;
+        icon = '✂️' ;
+      }else if (randomNum >1 && randomNum <=2){
+        compSelect = 'Paper' ;
+        icon = '📃'
+      }else{
+        compSelect = 'Rock' ;
+        icon = '🪨'
+      }
+    let res ;
+      if (compSelect === 'Scissor') {
+          res = `You Lose 😒`
+      }else if (compSelect === 'Paper'){
+        res = `It's Tie 🥸`
+      }else{
+        res = `You Win 🏆`
+      }
+  alert(`You have Chose 📃 , Computer Selected ${icon} , ${res}`) ;
+  }
+  function scissorBtn() {
+    let randomNum = Math.random()*3 ;
+    console.log(randomNum) ;
+    let compSelect ;
+    let icon ;
+      if(randomNum > 2){
+        compSelect = 'Scissor' ;
+        icon = '✂️' ;
+      }else if (randomNum >1 && randomNum <=2){
+        compSelect = 'Paper' ;
+        icon = '📃'
+      }else{
+        compSelect = 'Rock' ;
+        icon = '🪨'
+      }
+    let res ;
+      if (compSelect === 'Scissor') {
+          res = `It's Tie 🥸`
+      }else if (compSelect === 'Paper'){
+        res = `You Win 🏆`
+      }else{
+        res = `You Lose 😒`
+      }
+  alert(`You have Chose ✂️ , Computer Selected ${icon} , ${res}`) ;
+  }
 
 
 
+</script>
 
-  
 </body>
+
 </html>

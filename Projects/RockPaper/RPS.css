@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Sankofa+Display&display=swap');
+
+html,body{
+  text-align: center;
+  color: azure;
+  background-color: #7C00FE;
+  font-family: "Sankofa Display", sans-serif;
+}
+
+#heading{
+  margin-top: 30vh;
+  font-size: 6rem;
+}
+#ins{
+  font-size: 4rem;
+}
+
+.btn{
+  padding: 10px;
+  height: 10vh;
+  width:10vh;
+  font-size: 40px;
+  border-radius: 25px;
+  border: none;
+  background-color: #FFAF00;
+  margin: 30px
+}
+.btn:hover{
+  background-color: #F9E400;
+}
