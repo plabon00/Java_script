@@ -3,7 +3,7 @@
 html,body{
   text-align: center;
   color: azure;
-  background-color: #7C00FE;
+  background-color: #DEAC80;
   font-family: "Sankofa Display", sans-serif;
 }
 
@@ -22,9 +22,9 @@ html,body{
   font-size: 40px;
   border-radius: 25px;
   border: none;
-  background-color: #FFAF00;
+  background-color: rgba(104, 0, 232, 0.31);
   margin: 30px
 }
 .btn:hover{
-  background-color: #F9E400;
+  background-color: rgb(104, 0, 232, 0.6);
 }
